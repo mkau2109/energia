@@ -1,0 +1,69 @@
+/* Slide Form Container */
+.contact-form {
+  transition: all 0.3s ease;
+  padding: 30px; /* Add more padding for better spacing */
+  width: 100%; /* Make it take the full width of its container */
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.contact-form h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form .form-control {
+  width: 100%; /* Ensure all form fields take full width */
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.contact-form .phone-input .react-tel-input {
+  width: 100%; /* Make the phone input take full width */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form .btn {
+  background-color: lightcoral;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make the button take full width */
+}
+
+.contact-form .btn:hover {
+  background-color: darksalmon;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+    margin: 20px 15px; /* Ensure there's still some margin on smaller screens */
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+  }
+
+  .contact-form .btn {
+    padding: 10px;
+  }
+}

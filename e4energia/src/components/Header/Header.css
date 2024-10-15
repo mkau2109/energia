@@ -1,0 +1,92 @@
+.custom-navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 77px;
+}
+
+.logo {
+  width: 120px; /* Logo size */
+  height: auto;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.5rem 1rem; /* Padding for links */
+  transition: color 0.3s ease-in-out;
+  font-size: 13px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background-color: lightcoral; 
+  visibility: hidden; 
+  transition: all 0.3s ease-in-out; 
+}
+
+.nav-link:hover {
+  color: lightcoral; 
+}
+
+.nav-link:hover::after {
+  visibility: visible;
+  width: 100%; 
+}
+
+.get-quote-btn {
+  background: lightcoral;
+  color: azure !important;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem; 
+  border: none; 
+  border-radius: 4px; 
+}
+
+.get-quote-btn:hover {
+  color: #fff; /* Change color on hover */
+}
+
+/* Ensuring all nav links are displayed inline */
+.navbar-nav {
+  flex-direction: row; /* Align items horizontally */
+}
+
+.nav-item {
+  margin-left: 10px; /* Spacing between items */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .nav-item {
+    margin-left: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .get-quote-btn {
+    padding: 0.5rem 0.8rem; /* Smaller padding for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 40px; /* Smaller logo for mobile */
+  }
+
+  .navbar {
+    padding: 0.5rem; /* Padding adjustments for mobile */
+  }
+  
+  .nav-link {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .get-quote-btn {
+    font-size: 14px; /* Smaller button text */
+  }
+}
